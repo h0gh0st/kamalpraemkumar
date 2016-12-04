@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Alpha Project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-sandstorm.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<div class="container-fluid">
+
+  <div id="impress">
+    <div id="first" class="step" data-x="0" data-y="0">
+        <h2>hello there world, my name is</h2>
+        <h1 id="name">Kamal Kumar</h1>
+    </div>
+    <div id="second" class="step" data-x="700" data-y="0" data-rotate="-90" data-scale="2">
+      <h2>I'm 
+        <div class="slot">
+          <span>amazed</span>
+          <span>preplexed</span>
+          <span>dumbfounded</span>
+          <span>astonished</span>
+          <span>flabbergasted</span>
+          <span>bewilded</span>
+        </div>
+        <br/>by tech culture, <br/>having thoughful conversations, <br/>and hiking.</h2>
+    </div>
+    <div id="third" class="step" data-x="1500" data-y="0" data-rotate="-90" data-rotate-y="30" data-scale="2">
+      <h2>I'm write codes {</h2>
+      <p>front-end developer: true;</p>
+      <p> interactive designer: true;</p>
+      <p> FLOSS advocate: true;</p>
+      <p> tech consumer: literally;</p>
+      <h2>}</h2>
+    </div>
+    <div id="fourth" class="step" data-x="-1500" data-y="0" data-rotate="-90" data-rotate-y="120" data-scale="1">
+      <h2>I was born and raised in</h2>
+      <span>the pearl of the orient</span>
+      <div id="map"></div>
+    </div>
+    <div id="fifth" class="step" data-x="0" data-y="200" data-rotate="-180" data-rotate-x="90" data-scale="1">
+      <h2>Magic spells I know</h2>
+      <p id="neon1">html5, css3, js, jQ</p>
+      <p id="neon2">php, node</p>
+      <p id="neon3">sql, mongo</p>
+    </div>
+    <div id="sixth" class="step" data-x="-300" data-y="-350" data-rotate="180" data-scale="2">
+      <h2>If you have any cool ideas you want to work together on </h2>
+      <h2><a href="mailto:kamal.praem_kumar@hotmail.com?Subject=Grettings%20Padawan" target="_top">kamal.praem_kumar@hotmail.com</a></h2>
+      <h2>is where you can contact me.</h2>
+    </div>
+  </div>
+
+</div>
+
+
+<script src="js/impress.js"></script>
+<script>
+  $(document).ready(function() {
+    
+    window.myMap = function() {
+        var mapCanvas = document.getElementById("map");
+        var mapOptions = {
+            center: {lat: 5.4145728, lng: 100.3297271},
+            zoom: 10
+        };
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+      }
+      $.getScript('https://maps.googleapis.com/maps/api/js?key=AIzaSyBDA-vlNLI74Q1SzuJIZv1cyu0pPCVslb0&callback=myMap');
+
+    impress().init();
+
+  });
+  
+</script>
+<script src="" async defer></script>
+</body>
+</html>
