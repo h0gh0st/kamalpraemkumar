@@ -1,0 +1,80 @@
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.step{
+		width: 320px;
+	}
+
+	h1 { font-size: 3.5em; }
+	h2 { font-size: 1.5em; }
+
+	#first {
+		line-height: 40px;
+	}
+	#first h1 {
+		font-size: 2em;
+	}
+	#first h2 {
+		font-size: 1em;
+	}
+
+	#neon1 {
+		font-family: 'Audiowide', cursive;
+		color: #FF9900;
+		-webkit-animation: none;
+		-moz-animation: none;
+		animation: none;
+	}
+	#neon2 {
+		font-family: 'Audiowide', cursive;
+		color: #FF1177;
+		-webkit-animation: none;
+		-moz-animation: none;
+		animation: none;
+	}
+	#neon3 {
+		font-family: 'Audiowide', cursive;
+		color: #BA01FF;
+		-webkit-animation: none;
+		-moz-animation: none;
+		animation: none;
+	}
+
+	#third p {
+		font-size: 1em;
+		text-indent: 0em;
+	}
+
+	#fourth {
+		text-align: left;
+	}
+	#fourth span {
+		font-size: 2em;
+		line-height: 20px;
+	}
+	#map {
+		width: 320px;
+		height: 400px;
+	}
+
+	#fifth {
+		text-align: center;
+		line-height: 40px;
+		overflow: hidden;
+	}
+	#fifth h2 {
+		font-family: 'Iceland', cursive;
+		font-size: 1em;
+		text-transform: uppercase;
+	}
+	#fifth p {
+		font-size: 1.5em;
+	}
+
+	#sixth {
+		text-align: center;
+	}
+	#sixth h2{
+		font-size: 1em;
+		line-height: 40px;
+	}
+}

@@ -112,34 +112,34 @@ h2 { font-size: 3em; }
 	-ms-animation: rotateWord 18s linear infinite 0s;
 	animation: rotateWord 18s linear infinite 0s;
 }
-.slot span:nth-child(2) { 
-    -webkit-animation-delay: 3s; 
-	-ms-animation-delay: 3s; 
-	animation-delay: 3s; 
+.slot span:nth-child(2) {
+    -webkit-animation-delay: 3s;
+	-ms-animation-delay: 3s;
+	animation-delay: 3s;
 	color: #1abc9c;
 }
-.slot span:nth-child(3) { 
-    -webkit-animation-delay: 6s; 
-	-ms-animation-delay: 6s; 
-	animation-delay: 6s; 
-	color: #2ecc71;	
+.slot span:nth-child(3) {
+    -webkit-animation-delay: 6s;
+	-ms-animation-delay: 6s;
+	animation-delay: 6s;
+	color: #2ecc71;
 }
-.slot span:nth-child(4) { 
-    -webkit-animation-delay: 9s; 
-	-ms-animation-delay: 9s; 
-	animation-delay: 9s; 
+.slot span:nth-child(4) {
+    -webkit-animation-delay: 9s;
+	-ms-animation-delay: 9s;
+	animation-delay: 9s;
 	color: #e74c3c;
 }
-.slot span:nth-child(5) { 
-    -webkit-animation-delay: 12s; 
-	-ms-animation-delay: 12s; 
-	animation-delay: 12s; 
+.slot span:nth-child(5) {
+    -webkit-animation-delay: 12s;
+	-ms-animation-delay: 12s;
+	animation-delay: 12s;
 	color: #9b59b6;
 }
-.slot span:nth-child(6) { 
-    -webkit-animation-delay: 15s; 
-	-ms-animation-delay: 15s; 
-	animation-delay: 15s; 
+.slot span:nth-child(6) {
+    -webkit-animation-delay: 15s;
+	-ms-animation-delay: 15s;
+	animation-delay: 15s;
 	color: #bdc3c7;
 }
 @-webkit-keyframes rotateWord {
@@ -212,21 +212,21 @@ h2 { font-size: 3em; }
 	color: #FF9900;
 	-webkit-animation: neonfirst 1.5s ease-in-out infinite alternate;
 	-moz-animation: neonfirst 1.5s ease-in-out infinite alternate;
-	animation: neonfirst 1.5s ease-in-out infinite alternate;	
+	animation: neonfirst 1.5s ease-in-out infinite alternate;
 }
 #neon2 {
 	font-family: 'Audiowide', cursive;
-	color: #FF1177;	
+	color: #FF1177;
 	-webkit-animation: neonsecond 1.5s ease-in-out infinite alternate;
 	-moz-animation: neonsecond 1.5s ease-in-out infinite alternate;
-	animation: neonsecond 1.5s ease-in-out infinite alternate;	
+	animation: neonsecond 1.5s ease-in-out infinite alternate;
 }
 #neon3 {
 	font-family: 'Audiowide', cursive;
-	color: #BA01FF;	
+	color: #BA01FF;
 	-webkit-animation: neonthird 1.5s ease-in-out infinite alternate;
 	-moz-animation: neonthird 1.5s ease-in-out infinite alternate;
-	animation: neonthird 1.5s ease-in-out infinite alternate;	
+	animation: neonthird 1.5s ease-in-out infinite alternate;
 }
 
 @-webkit-keyframes neonfirst {
