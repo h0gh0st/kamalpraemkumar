@@ -258,6 +258,8 @@ h2 { font-size: 3em; }
 	width: 900px;
 	font: 1.4em/30px 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', sans-serif;
 	overflow-x: auto;
+  word-wrap: normal;
+  white-space: pre;
 }
 
 #sixth {
