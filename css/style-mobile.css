@@ -46,8 +46,10 @@
 	}
 
 	#fifth pre {
+		width: 320px;
 		text-align: left;
-		font-size: 0.8em;
+		white-space: normal;
+		font: 0.5em/20px 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', sans-serif;
 	}
 
 	/*#neon1 {
