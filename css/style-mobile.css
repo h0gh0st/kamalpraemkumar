@@ -37,7 +37,7 @@
 		font-size: 2em;
 	}
 	#map {
-		width: 320px;
+		width: 310px;
 		height: 400px;
 	}
 
@@ -46,7 +46,7 @@
 	}
 
 	#fifth pre {
-		width: 320px;
+		overflow-x: auto;
 		font-size: 0.8em;
 	}
 
