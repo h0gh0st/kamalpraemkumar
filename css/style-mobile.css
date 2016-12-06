@@ -46,7 +46,8 @@
 	}
 
 	#fifth pre {
-		overflow-x: auto;
+		overflow: scroll;
+    -webkit-overflow-scrolling: touch;
 		font-size: 0.8em;
 	}
 
