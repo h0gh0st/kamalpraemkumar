@@ -10,6 +10,7 @@
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap-sandstorm.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/atom-one-dark.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style-mobile.css">
 
@@ -49,17 +50,20 @@
             <span>flabbergasted</span>
             <span>bewilded</span>
           </div>
-          <br/>by tech culture, <br/>having thoughful conversations, <br/>and hiking.</h2>
+        </h2>
+        <h2>by tech culture,</h2>
+        <h2>having thoughful conversations,</h2>
+        <h2>and hiking.</h2>
       </div>
     </div>
 
     <div class="row">
-      <div id="third" class="step" data-x="1500" data-y="0" data-rotate="-90" data-rotate-y="30" data-scale="2">
+      <div id="third" class="step" data-x="1500" data-y="0" data-rotate="-90" data-rotate-y="40" data-scale="2">
         <h2>I write codes {</h2>
-        <p>front-end developer: true;</p>
-        <p> interactive designer: true;</p>
-        <p> FLOSS advocate: true;</p>
-        <p> tech consumer: literally;</p>
+        <p>"develop webapps": <span id="blue">true</span>;</p>
+        <p>"develop mobileapps": <span id="blue">true</span>;</p>
+        <p>"interactive design": <span id="blue">true</span>;</p>
+        <p>"tech consumer: <span id="red">literally</span>;</p>
         <h2>}</h2>
       </div>
     </div>
@@ -73,26 +77,48 @@
     </div>
 
     <div class="row">
-      <div id="fifth" class="step" data-x="0" data-y="200" data-rotate="-180" data-rotate-x="90" data-scale="1">
-        <h2>Magic spells I know</h2>
-        <p id="neon1">html5, css3, js, jQ</p>
-        <p id="neon2">php, node</p>
-        <p id="neon3">sql, mongo</p>
-      </div>
+      <div id="fifth" class="step" data-x="0" data-y="800" data-rotate="-180" data-rotate-x="100" data-scale="1">
+      <pre><code class="js">
+
+        (() => {
+          "use strict"
+
+          let frontEnd = ['HTML5', 'CSS3', 'JS', 'JQ'];
+          let backEnd = ['node', 'php', 'java'];
+          let db = ['mongo', 'sql'];
+
+          let lexicon = frontEnd.concat(backEnd, db);
+          let output = lexicon.map( (languages) => {
+            return "I'm quite fluent in using " +languages;
+          });
+          console.log(JSON.stringify(output, null, 1));
+
+        })();
+
+    </code></pre>
     </div>
 
     <div class="row">
       <div id="sixth" class="step" data-x="-300" data-y="-350" data-rotate="180" data-scale="2">
-        <h2>If you have any cool ideas you want to work together on </h2>
+        <h2>If you have any cool ideas you want to work together on, </h2>
         <h2><a href="mailto:kamal.praem_kumar@hotmail.com?Subject=Grettings%20Padawan" target="_top">kamal.praem_kumar@hotmail.com</a></h2>
         <h2>is where you can contact me.</h2>
+        <div id="contact_logo">
+          <a href="https://www.facebook.com/kamalpraemkumar">
+            <img class="svg"src="fonts/fb-logo.svg" alt="Facebook Link">
+          </a>
+          <a href="https://www.linkedin.com/in/kamalpraemkumar">
+            <img class="svg" src="fonts/ln-logo.svg" alt="Linkedin Link">
+          </a>
+        </div>
       </div>
     </div>
   </div>
 
 </div>
 
-
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 <script src="js/impress.js"></script>
 <script>
   $(document).ready(function() {
@@ -106,6 +132,33 @@
         var map = new google.maps.Map(mapCanvas, mapOptions);
       }
       $.getScript('https://maps.googleapis.com/maps/api/js?key=AIzaSyBDA-vlNLI74Q1SzuJIZv1cyu0pPCVslb0&callback=myMap');
+
+    $('img.svg').each(function(){
+      var $img = jQuery(this);
+      var imgID = $img.attr('id');
+      var imgClass = $img.attr('class');
+      var imgURL = $img.attr('src');
+
+      $.get(imgURL, function(data) {
+          // Get the SVG tag, ignore the rest
+          var $svg = jQuery(data).find('svg');
+
+          // Add replaced image's ID to the new SVG
+          if(typeof imgID !== 'undefined') {
+              $svg = $svg.attr('id', imgID);
+          }
+          // Add replaced image's classes to the new SVG
+          if(typeof imgClass !== 'undefined') {
+              $svg = $svg.attr('class', imgClass+' replaced-svg');
+          }
+
+          // Remove any invalid XML tags as per http://validator.w3.org
+          $svg = $svg.removeAttr('xmlns:a');
+
+          // Replace image with new SVG
+          $img.replaceWith($svg);
+      }, 'xml');
+    });
 
     impress().init();
 
