@@ -266,6 +266,8 @@ h2 { font-size: 3em; }
 }
 #sixth a {
 	cursor: pointer;
+  text-decoration: none;
+  color: #27ae60;
 }
 #sixth svg {
 		margin: 1%;
@@ -280,3 +282,70 @@ h2 { font-size: 3em; }
 
 .impress-enabled          { pointer-events: none; }
 .impress-enabled #impress { pointer-events: auto; }
+
+@media only screen and (max-width : 480px) {
+  h1 { font-size: 1.2em; }
+  h2 { font-size: 1em; }
+
+  body {
+		text-align: center;
+		line-height: 40px;
+	}
+
+  .container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .step {
+    width: auto;
+  }
+
+  #first {
+    line-height: 45px;
+  }
+  #first h1 {
+    font-size: 2em;
+  }
+  #first h2 {
+    font-size: 1em;
+  }
+
+  #second h2:first-child {
+			margin-left: -30%;
+	}
+	#second h2 div {
+			margin-left: 1%;
+	}
+
+  #third p {
+		font-size: 1em;
+	}
+
+  #fourth span {
+		font-size: 2em;
+	}
+	#map {
+		width: 320px;
+		height: 400px;
+	}
+
+  #fifth {
+		width: 320px;
+	}
+	#fifth pre {
+		width: 320px;
+		font: 0.9em/20px 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', sans-serif;
+    text-align: left;
+    white-space: pre-line;
+	}
+
+}
